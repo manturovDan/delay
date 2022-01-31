@@ -2,6 +2,7 @@
   <configuration default="false" name="LongBuild" type="Application" factoryName="Application" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="LongBuild" />
     <module name="LongBuild" />
+    <option name="PROGRAM_PARAMETERS" value="2" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>

@@ -17,3 +17,5 @@ public class LongBuild {
         System.out.println(new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()));
     }
 }
+
+//comment for commit
