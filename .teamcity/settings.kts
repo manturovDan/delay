@@ -1,6 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubIssues
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.youtrack
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 
@@ -33,14 +32,6 @@ project {
     buildType(Build)
 
     features {
-        githubIssues {
-            id = "PROJECT_EXT_3"
-            displayName = "manturovDan/delay"
-            repositoryURL = "https://github.com/manturovDan/delay"
-            authType = accessToken {
-                accessToken = "credentialsJSON:cc33674f-2a62-4c83-b25c-b0ea2a8f857b"
-            }
-        }
         youtrack {
             id = "PROJECT_EXT_4"
             displayName = "yt_integration"
