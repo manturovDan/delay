@@ -37,5 +37,18 @@ changeProject(DslContext.projectId) {
         }
         feature2.apply {
         }
+        add {
+            feature {
+                type = "IssueTracker"
+                id = "PROJECT_EXT_10"
+                param("secure:password", "")
+                param("name", "gh1")
+                param("authType", "accesstoken")
+                param("repository", "https://github.com/manturovDan/delay")
+                param("type", "GithubIssues")
+                param("secure:accessToken", "credentialsJSON:83896ea8-0aba-4dcb-8e31-6ef6b2224b0e")
+                param("username", "")
+            }
+        }
     }
 }
