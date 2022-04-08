@@ -3,7 +3,6 @@ package patches.projects
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.Project
 import jetbrains.buildServer.configs.kotlin.ProjectFeature
-import jetbrains.buildServer.configs.kotlin.projectFeatures.gitlabConnection
 import jetbrains.buildServer.configs.kotlin.ui.*
 
 /*
@@ -37,14 +36,6 @@ changeProject(DslContext.projectId) {
             }
         }
         feature2.apply {
-        }
-        add {
-            gitlabConnection {
-                id = "PROJECT_EXT_23"
-                displayName = "GitLab.com"
-                applicationId = "f5d7d5b61b637413da3c76ff88968938066e9a78cf4bf2a880dc16bbe4141a09"
-                clientSecret = "credentialsJSON:afc6c530-c9c8-487f-9c22-994fb26d39bf"
-            }
         }
     }
 }
